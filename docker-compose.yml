@@ -49,6 +49,7 @@ services:
     environment:
       # There are a lot of options to configure GoTrue. You can reference the example config:
       # https://github.com/supabase/gotrue/blob/master/example.env
+      - GOTRUE_DISABLE_SIGNUP=true
       - GOTRUE_SITE_URL=appflowy-flutter://                           # redirected to AppFlowy application
       - URI_ALLOW_LIST=*                                              # adjust restrict if necessary
       - GOTRUE_JWT_SECRET=${GOTRUE_JWT_SECRET}                        # authentication secret
